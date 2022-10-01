@@ -36,11 +36,12 @@ public class Loops {
 		int y = 10; //while loop = line 37 won't print y=10, but do while loop = line 41 will print 10. 
 		while (y < 10) {
 			System.out.println(y); //doesn't print – while loop checks condition at beginning.
-			x++; 
+			y++; 
 		}
 		do { //syntax for do while loop: while is moved to the end and finished with ;  
-			System.out.println(y); //prints 10 - do while loop always executes/iterates at least once; then it checks the condition (boolean expression)  at the end of the loop and if it's false will stop. 
-		} while (x < 2);
+			System.out.println(y);  //prints 10 - do while loop always executes/iterates at least once; then it checks the condition (boolean expression)  at the end of the loop and if it's false will stop. 
+			y++;
+		} while (y < 20);  //prints 10-19
 		
 	}
 }
